@@ -1147,7 +1147,7 @@ export default function MultimodalAdversarialDashboard() {
           {/* Footer */}
           <div className="flex items-center justify-center gap-2 border-t border-[#242428] pt-3">
             <a
-              href="https://github.com"
+              href="https://github.com/iiioooiso/Multimodal-Adversarial-AI"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg border border-[#2A2A2E] bg-[#0B0B0D] p-1.5 text-[#8B8B92] transition hover:border-[#3F3F45] hover:text-[#EDEDED]"
@@ -1155,7 +1155,7 @@ export default function MultimodalAdversarialDashboard() {
               <Github size={12} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ashutosh-singh-350b33291/"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg border border-[#2A2A2E] bg-[#0B0B0D] p-1.5 text-[#8B8B92] transition hover:border-[#3F3F45] hover:text-[#EDEDED]"

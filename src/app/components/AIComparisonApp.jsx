@@ -218,7 +218,7 @@ export default function AIComparisonApp() {
 
             <div className="flex items-center gap-3">
               <a
-                href="https://github.com/iiioooiso/Fiesta-Multi-Ai-Chat"
+                href="https://github.com/iiioooiso/Multimodal-Adversarial-AI"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-3 py-2 text-xs font-semibold flex items-center gap-1 text-gray-700 hover:text-gray-900 bg-white/30 hover:bg-white/50 backdrop-blur-sm rounded-xl transition-all duration-300 shadow-md hover:shadow-lg border border-white/40"

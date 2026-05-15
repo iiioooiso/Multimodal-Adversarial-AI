@@ -86,7 +86,7 @@ export default function LoginPage() {
 
             <div className="flex items-center gap-2">
               <a
-                href="https://github.com"
+                href="https://github.com/iiioooiso/Multimodal-Adversarial-AI"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-2 text-sm text-white/60 transition hover:bg-white/[0.05] hover:text-white md:inline-flex md:items-center md:gap-2"
