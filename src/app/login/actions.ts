@@ -19,7 +19,7 @@ export async function login(formData: FormData) {
 
     const { error } = await supabase.auth.signInWithOtp({
         email,
-        options: { emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}/?next=/` },
+        options: { emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}/?next=/dashboard` },
     })
     if (error) return { success: false, error: error.message }
     return { success: true, otp: true }
@@ -34,7 +34,7 @@ export async function signup(formData: FormData) {
         email,
         password,
         options: {
-            emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}?next=/`,
+            emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}?next=/dashboard`,
         },
     })
 

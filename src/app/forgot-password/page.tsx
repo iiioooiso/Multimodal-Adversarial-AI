@@ -23,33 +23,48 @@ export default function ForgotPasswordPage() {
     }
 
     return (
-        <main className="min-h-screen w-full flex flex-col items-center justify-center px-4 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/bg.png')" }}
-        >
-            <form onSubmit={handleSubmit} className="w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl rounded-2xl px-6 py-8 space-y-6">
-                <h1 className="text-3xl md:text-4xl font-bold text-white text-center tracking-tight">
-                    Forgot your Password?
-                </h1>
+        <main className="min-h-screen w-full bg-gradient-to-b from-zinc-950 via-zinc-950 to-black text-white flex items-center justify-center px-4">
+            <form onSubmit={handleSubmit} className="w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-6 shadow-2xl">
+                <h1 className="text-xl font-semibold tracking-tight">Reset your password</h1>
+                <p className="mt-2 text-sm text-white/60">
+                    Enter your email and we’ll send a reset link.
+                </p>
 
-                {message && <p className="text-center text-red-300">{message}</p>}
+                {message ? (
+                    <div className="mt-4 rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-sm text-white/70">
+                        {message}
+                    </div>
+                ) : null}
 
-                <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
-                        Enter your registered email
+                <div className="mt-4">
+                    <label htmlFor="email" className="mb-1 block text-xs font-medium text-white/70">
+                        Email
                     </label>
-                    <input id="email" name="email" type="email" required
-                        className="w-full px-4 py-2 rounded-lg bg-white/10 text-white border border-white/20 focus:ring-2 focus:ring-indigo-400 focus:outline-none transition" />
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        required
+                        className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm text-white/90 placeholder:text-white/30 outline-none focus:ring-2 focus:ring-white/10"
+                    />
                 </div>
 
-                <button type="submit" disabled={isPending}
-                    className={`w-full py-2 font-semibold rounded-lg transition text-white ${isPending ? 'bg-indigo-400 opacity-70 cursor-wait animate-pulse' : 'bg-indigo-500 hover:bg-indigo-600 active:scale-95'}`}>
-                    {isPending ? 'Sending...' : 'Send Reset Link'}
+                <button
+                    type="submit"
+                    disabled={isPending}
+                    className="mt-4 inline-flex w-full items-center justify-center rounded-xl border border-white/10 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white/90 hover:bg-white/15 disabled:opacity-60"
+                >
+                    {isPending ? 'Sending…' : 'Send reset link'}
                 </button>
-                <p className="text-sm text-gray-300 text-center">
-                    <Link href="/login" className="font-semibold text-indigo-300 hover:text-indigo-200 underline-offset-4 hover:underline">
+
+                <div className="mt-4 text-sm">
+                    <Link
+                        href="/login"
+                        className="text-white/70 hover:text-white underline-offset-4 hover:underline"
+                    >
                         Back to login
                     </Link>
-                </p>
+                </div>
             </form>
         </main>
     )

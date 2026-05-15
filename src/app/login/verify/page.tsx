@@ -4,34 +4,22 @@ import Link from "next/link"
 
 export default function Verify() {
     return (
-        <main
-            className="min-h-screen w-full flex items-center justify-center px-4 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/bg.png')" }}
-        >
-            <div className="w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl rounded-2xl px-8 py-10 text-center">
-
-                {/* Icon */}
-                <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-green-500/10 border border-green-400/20 shadow-md">
-                    <span className="text-3xl">📩</span>
+        <main className="min-h-screen w-full bg-gradient-to-b from-zinc-950 via-zinc-950 to-black text-white flex items-center justify-center px-4">
+            <div className="w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-6 text-center shadow-2xl">
+                <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-black/30">
+                    <span className="text-xl">📩</span>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
-                    Verify Your Email
-                </h3>
-
-                {/* Subtitle */}
-                <p className="text-gray-300 mb-8 text-sm leading-relaxed">
-                    We’ve sent a verification link to your inbox. <br />
-                    Please click the link to activate your account.
+                <h3 className="text-xl font-semibold tracking-tight">Verify your email</h3>
+                <p className="mt-2 text-sm text-white/60 leading-relaxed">
+                    We sent a verification link to your inbox. Open it to activate your account.
                 </p>
 
-                {/* Primary Button */}
                 <Link
                     href="/login"
-                    className="block w-full py-3 rounded-lg bg-indigo-600/80 text-white font-semibold hover:bg-indigo-700/90 active:scale-95 transition shadow-md backdrop-blur-sm"
+                    className="mt-5 inline-flex w-full items-center justify-center rounded-xl border border-white/10 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white/90 hover:bg-white/15"
                 >
-                    Go to Login
+                    Back to login
                 </Link>
             </div>
         </main>
