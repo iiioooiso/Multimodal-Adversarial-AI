@@ -438,7 +438,7 @@ The system transforms raw AI output into structured decision intelligence.
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/multimodal-adversarial-ai.git
+git clone https://github.com/iiioooiso/multimodal-adversarial-ai.git
 ```
 
 ---
